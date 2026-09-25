@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#98c867">
+<title>Blobs</title>
+<style>html,body{overscroll-behavior:none;background:#98c867;height:100%;margin:0;overflow:hidden}body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}canvas{touch-action:none;width:100vw;height:100dvh;display:block;position:fixed;inset:0}#safe{visibility:hidden;pointer-events:none;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);position:fixed}#debug{color:#1d2a1a;pointer-events:none;white-space:pre;background:#fffc;border-radius:6px;padding:4px 6px;font:12px/1.3 ui-monospace,monospace;position:fixed;top:8px;right:8px}</style>
+<!--
+  Usage metrics (page views + milestones; see src/web/analytics.ts).
+  GoatCounter's script already excludes localhost and private-network hosts
+  by default (https://www.goatcounter.com/help/skip-dev), which covers
+  `npm run dev`'s LAN URL and headless/puppeteer runs against it. `?nocount`
+  is a manual opt-out GoatCounter itself doesn't know about, so this inline
+  script disables the automatic pageview for it before count.js loads.
+-->
+<script>
+  if (new URLSearchParams(location.search).has("nocount")) window.goatcounter = { no_onload: true };
+</script>
+<script data-goatcounter="https://blobs.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  <script type="module" crossorigin src="./assets/index-DDSBpwlo.js"></script>
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="safe"></div>
+</body>
+</html>
